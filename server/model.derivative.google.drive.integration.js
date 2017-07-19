@@ -54,9 +54,9 @@ router.post('/integration/sendToTranslation', jsonParser, function (req, res) {
 
     var plus = google.plus('v1');
     plus.people.get({userId: 'me', auth: oauth2Client}, function (err, user) {
-      if (err || user == null) {
+      if (err == null) {
         console.log('model.derivative.google.drive.integration:sentToTranslation:google.user.get => ' + err);
-        res.status(500).json({error: 'Cannot, please try again.'});
+        res.status(500).json({error: 'Cannot get Google user information, please try again.'});
         return;
       }
 
