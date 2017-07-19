@@ -18,13 +18,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/autodesk-forge/model.derivative-nodejs-box.viewer"
+    "url": "git://github.com/koedwards/model.derivative-nodejs-google.drive.viewer"
   },
   "scripts": {
     "start": "NODE_ENV=production node start.js",
     "dev": "node start.js",
     "nodemon": "nodemon start.js --ignore www/"
   },
-  "author": "Augusto Goncalves (Forge Partner Development)",
+  "author": "Kevin Edwards (Georgia Tech )",
   "license": "MIT"
 }
