@@ -27,8 +27,8 @@ module.exports = {
 
   // set enviroment variables or hard-code here
   credentials: {
-    client_id: '3SvBu76Gjfu9WSfxZX0kcSiGoVdhDUgn',
-    client_secret: 'HPsL8ATflWKooq2d',
+      client_id: process.env.GOOGLE_CLIENT_ID || '174560695407-jghoc7nks0phhn4gnvddidan05bsn47t.apps.googleusercontent.com',
+      client_secret: process.env.GOOGLE_CLIENT_SECRET || 'GBJU7kvHNLC3DI0o6XPFS9uv'
   },
 
   // Required scopes for your application on server-side
@@ -40,8 +40,8 @@ module.exports = {
   google: {
     callbackURL: process.env.GOOGLE_CALLBACK_URL || 'https://forgebom.herokuapp.com/api/google/callback/oauth',
     credentials: {
-      client_id: '174560695407-jghoc7nks0phhn4gnvddidan05bsn47t.apps.googleusercontent.com',
-      client_secret: 'GBJU7kvHNLC3DI0o6XPFS9uvset'
+      client_id: process.env.FORGE_CLIENT_ID || '3SvBu76Gjfu9WSfxZX0kcSiGoVdhDUgn',
+      client_secret: process.env.FORGE_CLIENT_SECRET || 'HPsL8ATflWKooq2d',
     }
   }
 };
