@@ -25,7 +25,7 @@
     },
     "GOOGLE_CALLBACK_URL": {
       "description": "Redirect URI of your Google app, required for 3-legged OAuth",
-      "value": "https://forgebom.herokuapp.com/api/google/callback/oauth"
+      "value": "https://<<YOUR HEROKU APP NAME HERE>>.herokuapp.com/api/google/callback/oauth"
     }
   },
   "website": "https://developer.autodesk.com/",
